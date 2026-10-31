@@ -244,7 +244,7 @@ export async function createOneProfile(osType, proxy = {}, userAgent = "random",
     const majorMatch = finalUserAgent.match(/Chrome\/(\d+)/);
     const major = majorMatch ? parseInt(majorMatch[1], 10) : 0;
     if (major > 0 && major < 147) {
-        const fallbackUA = fp?.navigator?.userAgent || 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.7827.102 Safari/537.36';
+        const fallbackUA = fp?.navigator?.userAgent || 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7827.102 Safari/537.36';
         const fallbackVerMatch = fallbackUA.match(/Chrome\/([0-9.]+)/);
         const targetVer = fallbackVerMatch ? fallbackVerMatch[1] : '149.0.7827.102';
         console.log(`[INFO] Upgrading Chrome version in userAgent from ${major} to ${targetVer} (GoLogin securedOrbitaVersion requirement >= 147)`);

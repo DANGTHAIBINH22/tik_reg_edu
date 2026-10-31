@@ -1467,7 +1467,7 @@ function buildUserDetailUrlJSON({ username, user_agent, cookie_string, webIdCrea
     }
 
     let match = user_agent.match(/Chrome\/([\d.]+)/);
-    let chromeVersion = match ? match[1].split('.')[0] : '147';
+    let chromeVersion = match ? match[1].split('.')[0] : '150';
     let sec_ch_ua = `"Google Chrome";v="${chromeVersion}", "Not.A/Brand";v="8", "Chromium";v="${chromeVersion}"`;
 
     let sec_ch_ua_platform = '"macOS"';

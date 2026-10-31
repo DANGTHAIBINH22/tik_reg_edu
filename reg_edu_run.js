@@ -79,7 +79,7 @@ async function runVpsSelfUpdate() {
 }
 
 async function createProfiles(emails, proxies) {
-    const CHROME_VERSION = chromeVersion(readUaMajor());
+
     console.log(`[PHASE 1] Creating profiles... requested Chrome ${CHROME_VERSION}`);
     const tasks = emails.map((email, idx) => new ProfileTask({
         email: email.email,

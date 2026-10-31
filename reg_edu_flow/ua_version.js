@@ -4,7 +4,7 @@ import path from 'path';
 const STATE_FILE = path.resolve('./reg_edu_ua_major.txt');
 // 145/146 are silently upgraded by create_go.js to the GoLogin fingerprint's Chrome 154, and a 154 profile
 // fails every request with ERR_PROXY_CONNECTION_FAILED (measured). 147-149 work, so 147 is the real floor.
-const FIRST_MAJOR = 147;
+const FIRST_MAJOR = 150;
 
 /** Chrome's reduced User-Agent format (what real Chrome sends) is "<major>.0.0.0". */
 export const chromeVersion = (major) => `${major}.0.0.0`;
