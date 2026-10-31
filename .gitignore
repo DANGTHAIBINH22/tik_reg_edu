@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+.DS_Store
+
+# Runtime output / state
+*.txt
+images/
+reg_edu_ua_major.txt
+
+# Debug screenshots
+debug/
